@@ -34,9 +34,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="KW_progressContainer">
-    <div class="KW_progressBar"></div>
-  </div>
 
   <div class="page">
     <!-- NAV -->
@@ -79,75 +76,198 @@
       </header>
 
       <!-- CONTACT SECTION -->
-      <section class="ftco-section contact-section ftco-no-pt">
-        <div class="container">
-          <div class="row d-flex mb-5 contact-info justify-content-center">
-            <div class="col-md-12 mb-4 text-center">
-              <h2 class="h4">Get in Touch</h2>
-              <p class="lead">I'm available for freelance projects, collaborations, or just a chat!</p>
-            </div>
-            <div class="w-100"></div>
+<section class="ftco-section contact-section ftco-no-pt">
+  <div class="container">
+    <div class="row d-flex mb-5 contact-info justify-content-center">
+      <div class="col-md-12 mb-4 text-center">
+        <h2 class="h4">Get in Touch</h2>
+        <p class="lead">I'm available for freelance projects, collaborations, or just a chat!</p>
+      </div>
+      <div class="w-100"></div>
 
-            <div class="col-md-4 text-center ftco-animate">
-              <p><span><i class="icon-map-marker text-primary"></i> Location:</span><br>
-                <a href="https://www.google.com/maps/place/Karachi,+Sindh,+Pakistan/@24.8673512,66.9776269,11z" target="_blank">
-                  Karachi, Pakistan
-                </a>
-              </p>
-            </div>
-            <div class="col-md-4 text-center ftco-animate">
-              <p><span><i class="icon-phone text-primary"></i> Phone:</span><br>
-                <a href="tel:+923486812710">+92 348 6812710</a>
-              </p>
-            </div>
-            <div class="col-md-4 text-center ftco-animate">
-              <p><span><i class="icon-envelope text-primary"></i> Email:</span><br>
-                <a href="mailto:sameersheikhsons@gmail.com">sameersheikhsons@gmail.com</a>
-              </p>
-            </div>
+      <div class="col-md-4 text-center ftco-animate">
+        <p><span><i class="icon-map-marker text-primary"></i> Location:</span><br>
+          <a href="https://www.google.com/maps/place/Karachi,+Sindh,+Pakistan/@24.8673512,66.9776269,11z" target="_blank">
+            Karachi, Pakistan
+          </a>
+        </p>
+      </div>
+      <div class="col-md-4 text-center ftco-animate">
+        <p><span><i class="icon-phone text-primary"></i> Phone:</span><br>
+          <a href="tel:+923486812710">+92 348 6812710</a>
+        </p>
+      </div>
+      <div class="col-md-4 text-center ftco-animate">
+        <p><span><i class="icon-envelope text-primary"></i> Email:</span><br>
+          <a href="mailto:sameersheikhsons@gmail.com">sameersheikhsons@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row block-9 justify-content-center">
+      <div class="col-md-6 pr-md-5 ftco-animate">
+        <form id="contactForm" novalidate autocomplete="off">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name" id="form-name" required autocomplete="off">
           </div>
-
-          <div class="row block-9 justify-content-center">
-            <div class="col-md-6 pr-md-5 ftco-animate">
-              <form id="contactForm" novalidate>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Name" id="form-name" required>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Your Email" id="form-email" required>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject" id="form-subject" required>
-                </div>
-                <div class="form-group">
-                  <textarea cols="30" rows="7" class="form-control" placeholder="Message" id="form-message" required></textarea>
-                </div>
-                <div class="form-group text-center">
-                  <button type="submit" id="form-btnSend" class="btn btn-primary py-3 px-5">
-                    Send Message <i class="icon-paper-plane"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
-
-            <div class="col-md-6 d-flex align-items-center justify-content-center ftco-animate">
-              <div class="author-img" style="background-image: url(images/cover-profile.png); width: 100%; height: 400px; background-size: cover; background-position: center; border-radius: 10px;" data-scrollax="properties: { translateY: '-70%'}"></div>
-            </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email" id="form-email" required autocomplete="off">
           </div>
-
-          <!-- SUCCESS MESSAGE -->
-          <div class="row justify-content-center mt-4">
-            <div class="col-md-8">
-              <div id="success-message" class="alert alert-success text-center d-none">
-                <i class="icon-check"></i> Thank you! Your message has been sent successfully.
-              </div>
-              <div id="error-message" class="alert alert-danger text-center d-none">
-                <i class="icon-exclamation-triangle"></i> Oops! Something went wrong. Please try again.
-              </div>
-            </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Subject" id="form-subject" required autocomplete="off">
           </div>
+          <div class="form-group">
+            <textarea cols="30" rows="7" class="form-control" placeholder="Message" id="form-message" required autocomplete="off"></textarea>
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" id="form-btnSend" class="btn btn-primary py-3 px-5">
+              Send Message <i class="icon-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- SUCCESS / ERROR MESSAGES -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-8">
+        <div id="success-message" class="alert alert-success text-center d-none">
+          <i class="icon-check"></i> Thank you! Your message has been sent successfully.
         </div>
-      </section>
+        <div id="error-message" class="alert alert-danger text-center d-none">
+          <i class="icon-exclamation-triangle"></i> Oops! Something went wrong. Please try again.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/923486812710?text=Hello%20SameerxShaykh!" 
+     target="_blank" 
+     class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </a>
+
+  <style>
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 50px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+      transform: translateY(-2px);
+    }
+    .whatsapp-btn i {
+      font-size: 20px;
+    }
+
+    /* Progress Bar */
+    .KW_progressContainer {
+      width: 100%;
+      height: 4px;
+      background: #eee;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      display: none;
+    }
+    .KW_progressBar {
+      height: 100%;
+      width: 0;
+      background: #007bff;
+      transition: width 0.3s ease;
+    }
+  </style>
+
+</section>
+
+<!-- EmailJS + Validation + AOS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function () {
+  emailjs.init("_BTyoYqg9W-ptd9iR"); // 🔑 EmailJS Public Key
+
+  const form = document.getElementById("contactForm");
+  const btn = document.getElementById("form-btnSend");
+  const successBox = document.getElementById("success-message");
+  const errorBox = document.getElementById("error-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // BLOCK default form submit
+
+    const name = document.getElementById("form-name").value.trim();
+    const email = document.getElementById("form-email").value.trim();
+    const subject = document.getElementById("form-subject").value.trim();
+    const message = document.getElementById("form-message").value.trim();
+
+    // Hide previous messages
+    successBox.classList.add("d-none");
+    errorBox.classList.add("d-none");
+
+    // Validation
+    if (!name || !email || !subject || !message) return showError("Please fill all required fields.");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) return showError("Please enter a valid email.");
+    if (message.length < 10) return showError("Message should be at least 10 characters.");
+
+    // Disable button + progress
+    btn.disabled = true;
+    btn.innerHTML = "Sending...";
+    const progressBar = document.querySelector(".KW_progressBar");
+    const progressContainer = document.querySelector(".KW_progressContainer");
+    if (progressBar && progressContainer) {
+      progressContainer.style.display = "block";
+      progressBar.style.width = "0%";
+      setTimeout(() => { progressBar.style.width = "50%"; }, 200);
+    }
+
+    // Send email
+    emailjs.send("service_b3jy86k", "template_4vxbffg", {
+      from_name: name,
+      from_email: email,
+      subject: subject,
+      message: message
+    })
+    .then(() => {
+      successBox.classList.remove("d-none");
+      form.reset();
+      if (progressBar) progressBar.style.width = "100%";
+      setTimeout(() => { if (progressContainer) progressContainer.style.display="none"; }, 500);
+    })
+    .catch(() => showError("Oops! Something went wrong. Please try again."))
+    .finally(() => {
+      btn.disabled = false;
+      btn.innerHTML = "Send Message <i class='icon-paper-plane'></i>";
+    });
+
+    function showError(msg){
+      errorBox.innerText = msg;
+      errorBox.classList.remove("d-none");
+      successBox.classList.add("d-none");
+      if (progressContainer) progressContainer.style.display="none";
+    }
+  });
+
+  // Initialize AOS
+  if (typeof AOS !== "undefined") AOS.init({ duration: 800, easing: 'slide', once: true });
+
+})();
+</script>
+
+
 
       <!-- FOOTER -->
       <footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -220,6 +340,48 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("_BTyoYqg9W-ptd9iR"); // 🔑 EmailJS Public Key
+  })();
+</script>
+
+  <div class="KW_progressContainer">
+    <div class="KW_progressBar"></div>
+  </div>
+
+
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const btn = document.getElementById("form-btnSend");
+    btn.disabled = true;
+    btn.innerHTML = "Sending...";
+
+    emailjs.send("service_b3jy86k", "template_4vxbffg", {
+      from_name: document.getElementById("form-name").value,
+      from_email: document.getElementById("form-email").value,
+      subject: document.getElementById("form-subject").value,
+      message: document.getElementById("form-message").value,
+    })
+    .then(function () {
+      document.getElementById("success-message").classList.remove("d-none");
+      document.getElementById("error-message").classList.add("d-none");
+      document.getElementById("contactForm").reset();
+      btn.disabled = false;
+      btn.innerHTML = "Send Message <i class='icon-paper-plane'></i>";
+    }, function () {
+      document.getElementById("error-message").classList.remove("d-none");
+      document.getElementById("success-message").classList.add("d-none");
+      btn.disabled = false;
+      btn.innerHTML = "Send Message <i class='icon-paper-plane'></i>";
+    });
+  });
+</script>
+
 
   <script>
     // Initialize AOS
